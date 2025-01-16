@@ -19,7 +19,7 @@ main {
   max-width: 100%;
   max-height: 100%;
   text-align: center;
-  padding: 3rem;
+  padding: 1.2rem;
 
   .btn-wrapper {
     margin-top: 1rem;
@@ -54,24 +54,53 @@ main {
   .symbee {
     width: max-content;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     cursor: default;
 
     h3 {
       margin-bottom: 0.65rem;
       font-size: 2.15rem;
+      transition: 0.3s cubic-bezier(0.54, 0.01, 0.21, 1);
+      bottom: 0;
+
+      &:hover {
+        bottom: 5px;
+        font-size: 2.5rem;
+      }
     }
 
     .symbee-container {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      text-align: left;
+      justify-content: space-between;
+      gap: 3.2rem;
+      text-align: center;
       background-color: #ee9b11;
-      padding: 15px 25px;
+      padding: 15px;
       border-radius: 10px;
 
       .left-content {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .right-content {
+          margin: auto;
+
+          .bee {
+            position: relative;
+            height: min-content;
+            bottom: 0;
+            width: 7rem;
+            transition: 0.3s cubic-bezier(0.54, 0.01, 0.21, 1);
+
+            &:hover {
+              scale: 1.1;
+              bottom: 1.1rem;
+            }
+          }
+        }
 
         h1 {
           position: relative;
@@ -80,7 +109,7 @@ main {
           transition: 0.3s cubic-bezier(0.54, 0.01, 0.21, 1);
           bottom: 0;
 
-          &:hover{
+          &:hover {
             bottom: 5px;
             font-size: 4rem;
           }
@@ -104,23 +133,7 @@ main {
           margin-top: 1rem;
           width: 100%;
           max-width: 100%;
-        }
-      }
-
-      .right-content {
-        display: flex;
-
-        .bee {
-          position: relative;
-          height: min-content;
-          bottom: 0;
-          width: 7rem;
-          transition: 0.3s cubic-bezier(0.54, 0.01, 0.21, 1);
-
-          &:hover {
-            scale: 1.1;
-            bottom: 1.1rem;
-          }
+          justify-content: center;
         }
       }
     }
@@ -143,5 +156,11 @@ main {
       flex-wrap: wrap;
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 365px) {
+  .right-content {
+    display: none;
   }
 }

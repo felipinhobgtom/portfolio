@@ -15,13 +15,7 @@
   h3 {
     margin: 0;
     font-size: 2.15rem;
-    transition: 0.3s cubic-bezier(0.54, 0.01, 0.21, 1);
-    bottom: 0;
-
-    &:hover {
-      bottom: 5px;
-      font-size: 2.5rem;
-    }
+    
   }
 
   span {
