@@ -1,0 +1,26 @@
+.badge {
+  position: relative;
+  padding: 1px 20px;
+  background: #000;
+  border-radius: 3rem;
+  color: #fff;
+  font-weight: 500;
+  scale: 1;
+  bottom: 0;
+  transition: 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    bottom: 5px;
+    scale: 1.2;
+  }
+
+  &.secondary {
+    background: transparent;
+    border-color: #fff;
+    font-size: 1.5rem;
+    padding: 1px 35px;
+    color: #fff;
+    border: 3px solid #fff;
+  }
+}
