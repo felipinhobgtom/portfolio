@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
   }
 
   handleNav(): void {
-    const pdfUrl: string = 'curr.pdf';
+    const pdfUrl: string = 'https://docs.google.com/document/d/1UOnuc5BIEJe9ezj9WI_qYu6zUKJoRc_z/edit?usp=sharing&ouid=102748905109109663295&rtpof=true&sd=true';
     window.open(pdfUrl, '_blank');
   }
 
