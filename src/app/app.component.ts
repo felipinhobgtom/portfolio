@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
 
   @ViewChild('aboutMe', { static: true }) aboutMe!: ElementRef<HTMLDivElement>;
   @ViewChild('symBee', { static: true }) symBee!: ElementRef<HTMLDivElement>;
+  @ViewChild('beeedu', { static: true }) beeedu!: ElementRef<HTMLDivElement>;
   @ViewChild('hardSkills', { static: true })
   hardSkills!: ElementRef<HTMLDivElement>;
   @ViewChild('symBeeBadges', { static: true })

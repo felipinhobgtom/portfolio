@@ -19,52 +19,81 @@
 
   <!-- Project Component -->
 
-  <section class="symbee" #symBee>
-    <h3>Projeto Sym<span style="color: #ee9b11;">Bee</span>!</h3>
-    <div class="symbee-container">
-      <div class="left-content">
-        <h1>SymBee</h1>
-        <div class="symbee-desc">
-          <span>A SymBee é uma plataforma de freelance para desenvolvedores. A sua solução foi ser uma comunidade
-            <strong>brasileira</strong> onde devs poderiam se comunicar e competir entre os usuários.</span>
+  <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: start; justify-content: center;">
+    <section class="symbee" #symBee>
+      <h3>Projeto Sym<span style="color: #ee9b11;">Bee</span>!</h3>
+      <div class="symbee-container">
+        <div class="left-content">
+          <h1>SymBee</h1>
+          <div class="symbee-desc" >
+            <span>A SymBee é uma plataforma de freelance para desenvolvedores. A sua solução foi ser uma comunidade
+              <strong>brasileira</strong> onde devs poderiam se comunicar e competir entre os usuários.</span>
+          </div>
+          <div class="right-content">
+            <img src="belha isquerda.png" alt="left bee" class="bee left">
+            <img src="belha direita.png" alt="right bee" class="bee right">
+          </div>
+          <div #symBeeBadges style="display: flex; flex-wrap: wrap; gap: 0.75rem;" class="badges-wrapper">
+            <app-badges>React.js</app-badges>
+            <app-badges>HTML</app-badges>
+            <app-badges>CSS</app-badges>
+            <app-badges>Java</app-badges>
+            <app-badges>Spring Boot</app-badges>
+            <app-badges>MySQL</app-badges>
+          </div>
         </div>
 
-        <div class="right-content">
-          <img src="belha isquerda.png" alt="left bee" class="bee left">
-          <img src="belha direita.png" alt="right bee" class="bee right">
-        </div>
+      </div>
+    </section>
+    <section class="symbee" #beeedu>
+      <h3 style="color: #c90097;"><strong style="color: #1ad2df;">BEE</strong>EDU!</h3>
+      <div class="symbee-container" style="background-color: #0d54da;">
+        <div class="left-content">
+          <h1 style="color: whitesmoke;">BEEDU</h1>
+          <div class="symbee-desc">
+            <span style="color: whitesmoke;">A Beeedu é uma plataforma digital que conecta alunos da rede pública de ensino com empresas que buscam novos <strong style="color: whitesmoke;">talentos em formação.</strong></span>
+          </div>
 
-        <div #symBeeBadges style="display: flex; flex-wrap: wrap; gap: 0.75rem;" class="badges-wrapper">
-          <app-badges>React.js</app-badges>
-          <app-badges>HTML</app-badges>
-          <app-badges>CSS</app-badges>
-          <app-badges>Java</app-badges>
-          <app-badges>Spring Boot</app-badges>
-          <app-badges>MySQL</app-badges>
+          <div class="right-content">
+            <img src="beeedu.png" alt="beeedu" class="bee left" style="transform: scale(1.5);">
+          </div>
+
+          <div #symBeeBadges style="display: flex; flex-wrap: wrap; gap: 0.75rem;" class="badges-wrapper">
+            <app-badges>Laravel</app-badges>
+            <app-badges>MongoDB</app-badges>
+            <app-badges>Inertia</app-badges>
+            <app-badges>React.js</app-badges>
+            <app-badges>Gemini API</app-badges>
+            <app-badges>Venom API</app-badges>
+          </div>
         </div>
       </div>
-      
-
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Hard-Skills Component -->
 
   <section class="hard-skills-container">
-    <h3>Principais Hard-Skills!</h3>
+    <h3>Habilidades tecnicas!</h3>
     <div class="hard-skills" #hardSkills>
       <app-badges nomeClasse="secondary">HTML</app-badges>
       <app-badges nomeClasse="secondary">CSS</app-badges>
       <app-badges nomeClasse="secondary">TypeScript</app-badges>
       <app-badges nomeClasse="secondary">Node.js</app-badges>
-      <app-badges nomeClasse="secondary">Postgres</app-badges>
       <app-badges nomeClasse="secondary">MySQL</app-badges>
       <app-badges nomeClasse="secondary">React.js</app-badges>
+      <app-badges nomeClasse="secondary">Vue</app-badges>
+      <app-badges nomeClasse="secondary">Next</app-badges>
       <app-badges nomeClasse="secondary">Express.js</app-badges>
       <app-badges nomeClasse="secondary">JSON</app-badges>
       <app-badges nomeClasse="secondary">Java</app-badges>
       <app-badges nomeClasse="secondary">Spring Boot</app-badges>
-      <app-badges nomeClasse="secondary">Angular</app-badges>
+      <app-badges nomeClasse="secondary">Nest</app-badges>
+      <app-badges nomeClasse="secondary">Prisma</app-badges>
+      <app-badges nomeClasse="secondary">Mongoose</app-badges>
+      <app-badges nomeClasse="secondary">PHP</app-badges>
+      <app-badges nomeClasse="secondary">C#</app-badges>
+      <app-badges nomeClasse="secondary">Laravel</app-badges>
     </div>
   </section>
 
